@@ -1,2 +1,3 @@
 # exercicios_cplusplus
-Studying C++
+
+Studying C and C++
