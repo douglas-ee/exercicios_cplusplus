@@ -5,7 +5,7 @@
 
 using namespace std;
 
-//Função principal do programa
+//Funcao principal do programa
 int main(){
 
     //Definindo uma String
@@ -17,13 +17,12 @@ int main(){
     //Lendo uma string
     cin >> palavra;
 
-    //Imprimindo uma variável
+    //Imprimindo uma variavel
     cout << "\nA palavra eh:" << palavra;
 
-    //Pausa o programa após executar
+    //Pausa o programa apos executar
     system("pause");
 
     return 0;
 
 }
-
