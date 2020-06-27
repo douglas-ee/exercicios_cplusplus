@@ -10,14 +10,14 @@ int main()
 
 	//Declarando um vetor e atribuindo valores ao mesmo
 	int array[] = {1, 2, 3, 4, 5};
-	//Declarando um ponteiro que aponta para o endereço do vetor ja declarado
+	//Declarando um ponteiro que aponta para o endereco do vetor ja declarado
 	int *parray = &array[0];
-	//Declarando um outro ponteiro que aponta para o endereço do ponteiro anterior
+	//Declarando um outro ponteiro que aponta para o endereco do ponteiro anterior
 	int **pparray = &parray;
-	//Declarando mais um outro ponteiro que aponta para o endereço do ponteiro anterior
+	//Declarando mais um outro ponteiro que aponta para o endereco do ponteiro anterior
 	int ***ppparray = &pparray;
 
-	/*----- AQUI TEMOS A IMPRESSÃO DOS PONTEIROS QUE APONTAM PARA OUTROS PONTEIRO -----*/
+	/*----- AQUI TEMOS A IMPRESSAO DOS PONTEIROS QUE APONTAM PARA OUTROS PONTEIRO -----*/
 
 	//Mostrando o valor a qual o apontador ***ppparray esta apontando
 	cout << "Valor a qual o ***ppparray esta apontando: " << endl;
@@ -28,10 +28,10 @@ int main()
 	cout << "Valor a qual o array[0] contem: " << endl;
 	cout << array[1] << endl;
 
-	//Declarando algumas variaveis que serão uteis
+	//Declarando algumas variaveis que sereo uteis
 	int i = 0;
 
-	cout << "Aqui temos a impressão através de um while e apontador" << endl;
+	cout << "Aqui temos a impressao atraves de um while e apontador" << endl;
 	while(i < 5)
 	{
 		cout << *parray << endl;
@@ -44,14 +44,14 @@ int main()
 
 		//Declarando algumas variaveis uteis ao codigo
 		char nome_1[10];
-		//Limpando a variavel para não termos problemas com cache (lixo)
+		//Limpando a variavel para nao termos problemas com cache (lixo)
 		nome_1[10] = NULL;
-		//Função que faz a contagem do tamanho do char
+		//Funcao que faz a contagem do tamanho do char
 		int tam_1 = strlen(nome_1);
 		int j = 0;
-		//Ponteiro que dá o ultimo valor do vetor
+		//Ponteiro que da o ultimo valor do vetor
 		char *pfim = &nome_1[tam_1 - 1];
-		//Ponteiro que dá o primeiro valor do vetor
+		//Ponteiro que da o primeiro valor do vetor
 		char *pini = &nome_1[0];
 
 		//While usado para digitar as palavras
@@ -62,7 +62,7 @@ int main()
 			j++;
 		}
 
-		//Impressão dos dados
+		//ImpressAo dos dados
 		cout << "Imprimindo o fim do char: " << *pfim << endl;
 		cout << "Imprimindo o inicio do char: " << *pini << endl;
 
@@ -71,16 +71,16 @@ int main()
 	//Declarando variaveis uteis ao codigo
 	char *invertendo;
 	char nome_2[100];
-	//Limpando a variavel para não termos problemas com cache (lixo)
+	//Limpando a variavel para nao termos problemas com cache (lixo)
 	nome_2[100] = NULL;
 	cout << "Digite um nome: " << endl;
 	cin >> nome_2;
 	//Calculando o tamanho do vetor
 	int tam_2 = strlen(nome_2);
-	//Ponteiro recebendo o ultimo valor utel do endereço da variavel
+	//Ponteiro recebendo o ultimo valor utel do endereco da variavel
 	invertendo = &nome_2[tam_2 - 1];
 
-	//Laço de repetição responsavel por inverter a palavra
+	//Laco de repeticao responsavel por inverter a palavra
 	do
 	{
 		cout << *invertendo;
