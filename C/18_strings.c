@@ -1,28 +1,28 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-//Fun��o principal do programa
+//Funcao principal do programa
 void main()
 {
 
-    //Vari�veis
+    //Variaveis
     char palavra[10];
 
-    //Instru��o
+    //Instrucao
     printf("Digite uma palavra");
 
     //Limpa o Buffer
     setbuf(stdin, 0);
 
-    //L� a String
+    //Le a String
     fgets(palavra, 255, stdin);
 
-    //Limpa as casas n�o utilizadas
+    //Limpa as casas nao utilizadas
     palavra[strlen(palavra) - 1] = '\0';
 
     //Imprime na tela
     printf("%s", palavra);
 
-    //Pausa o programa ap�s executar
+    //Pausa o programa apos executar
     system("pause");
 }

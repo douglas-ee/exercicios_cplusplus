@@ -5,7 +5,7 @@
 void main()
 {
 
-    //Definindo Vari�veis
+    //Definindo Variaveis
     int a = 1, b = 10;
 
     //Contando ate 10
