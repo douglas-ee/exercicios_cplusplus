@@ -6,10 +6,10 @@ using namespace std;
 void inverte(char nome_3[])
 {
 
-	//Obtendo o tamanho da string
-	int tam = strlen(nome_3);
+    //Obtendo o tamanho da string
+    int tam = strlen(nome_3);
 
-/*Ao inves de utilizarmos esse for para descobrir o tamanho da string
+    /*Ao inves de utilizarmos esse for para descobrir o tamanho da string
 poderiamos substituir por uma funcao que a biblioteca <string.h> disponibiliza
 que eh o:
 
@@ -21,17 +21,16 @@ que eh o:
 	}
 */
 
-	//Invertendo o nome digitado
-	for(int i = tam - 1; i >= 0; i--)
-	{
-		cout << nome_3[i];
-	}
-
+    //Invertendo o nome digitado
+    for (int i = tam - 1; i >= 0; i--)
+    {
+        cout << nome_3[i];
+    }
 }
 
 int main()
 {
-	/*	int i = 0;
+    /*	int i = 0;
 
 		//Declarando um vetor char
 		char nome[] = {'C', '+', '+', '\0'};
@@ -60,9 +59,9 @@ int main()
 
 		cout << endl;
 	*/
-	char nome_3[] = "Douglas Dos Santos Gomes";
+    char nome_3[] = "Douglas Dos Santos Gomes";
 
-	inverte(nome_3);
+    inverte(nome_3);
 
-	return 0;
+    return 0;
 }

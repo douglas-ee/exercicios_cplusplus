@@ -6,7 +6,8 @@
 using namespace std;
 
 //Funcao principal do programa
-int main(){
+int main()
+{
 
     //Criando uma matriz
     int matriz[2][2], i, j;
@@ -18,8 +19,10 @@ int main(){
     matriz[1][1] = 4;
 
     //Imprimindo valores na tela
-    for(i = 0; i < 2; i++){
-        for(j = 0; j < 2; j++){
+    for (i = 0; i < 2; i++)
+    {
+        for (j = 0; j < 2; j++)
+        {
             //cout << "\ni = " << i << " , j = " << j;
             cout << matriz[i][j] << " ";
         }
@@ -27,16 +30,20 @@ int main(){
     }
 
     //Lendo valores para a matriz
-    for(i = 0; i < 2; i++){
-        for(j = 0; j < 2; j++){
-           //scanf("%d", &matriz[i][j]);
-           cin >> matriz[i][j];
+    for (i = 0; i < 2; i++)
+    {
+        for (j = 0; j < 2; j++)
+        {
+            //scanf("%d", &matriz[i][j]);
+            cin >> matriz[i][j];
         }
     }
 
     //Imprimindo valores na tela
-    for(i = 0; i < 2; i++){
-        for(j = 0; j < 2; j++){
+    for (i = 0; i < 2; i++)
+    {
+        for (j = 0; j < 2; j++)
+        {
             //cout << "\ni = " << i << " , j = " << j;
             cout << matriz[i][j] << " ";
         }
@@ -45,5 +52,4 @@ int main(){
 
     //Pausa o programa apos executar
     system("pause");
-
 }

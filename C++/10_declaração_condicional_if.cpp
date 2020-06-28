@@ -4,19 +4,21 @@ using namespace std;
 
 int main()
 {
-	int dinheiro = 10;
+    int dinheiro = 10;
 
+    //Declaracao condicional IF
+    if (dinheiro > 10)
+    {
+        cout << "Eu vou ao cinema!";
+    }
+    else
+    {
+        cout << "Eu n�o vou ao cinema!";
+    }
 
-	//Declaracao condicional IF
-	if(dinheiro > 10){
-		cout << "Eu vou ao cinema!";
-	}else{
-		cout << "Eu n�o vou ao cinema!";
-	}
+    //Podemos utilizar operadores como
 
-	//Podemos utilizar operadores como
-
-	/*
+    /*
 	Igualdade: ==
 	Igual ou maior: >=
 	Igual ou menor	<=
@@ -28,15 +30,16 @@ int main()
 	NOT: !
 	*/
 
-	//UTILIZANDO A VARIAVEL BOOLEANA
+    //UTILIZANDO A VARIAVEL BOOLEANA
 
-	bool var = 10 < 20;
+    bool var = 10 < 20;
 
-	cout << var << endl;
+    cout << var << endl;
 
-	if(var){
-		cout << "Verdadeiro";
-	}
+    if (var)
+    {
+        cout << "Verdadeiro";
+    }
 
-	return 0;
+    return 0;
 }

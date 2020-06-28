@@ -6,13 +6,13 @@ using namespace std;
 //Declarando uma struct
 typedef struct pessoa
 {
-	char nome[100];
-	int idade;
+    char nome[100];
+    int idade;
 } t_pessoa;
 
 int main(int argc, char *argv[])
 {
-	/*
+    /*
 		----- > FAZENDO UMA LISTA DE NOME E DADOS < -----
 
 		char nomes[3][100] = {"Douglas", "Santos", "Gomes"};
@@ -22,9 +22,9 @@ int main(int argc, char *argv[])
 		cout << "Idade: " << idades[0] << endl;
 	*/
 
-//	----- > FAZENDO UMA LISTA DE NOME E DADOS COM STRUCTS < -----
+    //	----- > FAZENDO UMA LISTA DE NOME E DADOS COM STRUCTS < -----
 
-	/*
+    /*
 		t_pessoa p[10];
 
 		strcpy(p[0].nome, "Douglas");
@@ -39,20 +39,20 @@ int main(int argc, char *argv[])
 		cout << "Nome: " << p[1].nome << endl;
 		cout << "Idade: " << p[1].idade << endl;
 	*/
-//	----- > FAZENDO UMA LISTA DE NOME E DADOS COM STRUCTS E PONTEIROS < -----
+    //	----- > FAZENDO UMA LISTA DE NOME E DADOS COM STRUCTS E PONTEIROS < -----
 
-	t_pessoa pessoas[10];
-	t_pessoa *p;
+    t_pessoa pessoas[10];
+    t_pessoa *p;
 
-	p = &pessoas[0];
+    p = &pessoas[0];
 
-	pessoas[0].idade = 20;
-	pessoas[1].idade = 21;
-	pessoas[2].idade = 22;
+    pessoas[0].idade = 20;
+    pessoas[1].idade = 21;
+    pessoas[2].idade = 22;
 
-	cout << "Idade: " << p->idade << endl;
-	cout << "Idade: " << (p + 1)->idade << endl;
-	cout << "Idade: " << (p + 2)->idade << endl;
+    cout << "Idade: " << p->idade << endl;
+    cout << "Idade: " << (p + 1)->idade << endl;
+    cout << "Idade: " << (p + 2)->idade << endl;
 
-	return 0;
+    return 0;
 }

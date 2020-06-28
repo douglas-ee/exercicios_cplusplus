@@ -7,13 +7,13 @@ using namespace std;
 class Pessoa
 {
 public:
-	char nome[100];
-	char cpf[20];
-	int idade;
+    char nome[100];
+    char cpf[20];
+    int idade;
 };
 int main(int argc, char *argv[])
 {
-	/*
+    /*
 	---> PODEMOS INICIALIZAR ASSIM <---
 	Pessoa p1;
 
@@ -22,30 +22,24 @@ int main(int argc, char *argv[])
 	p1.idade = 20;
 
 
-	//---> PODEMOS INICIALIZAR ASSIM TAMBÉM<---
+	//---> PODEMOS INICIALIZAR ASSIM TAMBï¿½M<---
 	Pessoa p1 = {"Douglas dos Santos Gomes", "000.000.000-00", 20};
 
 	cout << "Nome: " << p1.nome << "\nCPF: " << p1.cpf << "\nIdade: " << p1.idade << endl;
 	*/
 
-	//---> PODEMOS INICIALIZAR COMO UM VETOR <---
+    //---> PODEMOS INICIALIZAR COMO UM VETOR <---
 
-	Pessoa p1[3] =
-	{
-		{
-			"Douglas", "000.000.000-00", 20
-		},
-		{
-			"Rayana", "000.000.000-01", 21
-		},
-		{
-			"Culilim", "000.000.000-02", 18
-		},
-	};
+    Pessoa p1[3] =
+        {
+            {"Douglas", "000.000.000-00", 20},
+            {"Rayana", "000.000.000-01", 21},
+            {"Culilim", "000.000.000-02", 18},
+        };
 
-	cout << "Nome: " << p1[0].nome << "\nCPF: " << p1[0].cpf << "\nIdade: " << p1[0].idade << endl;
-	cout << "Nome: " << p1[1].nome << "\nCPF: " << p1[1].cpf << "\nIdade: " << p1[1].idade << endl;
-	cout << "Nome: " << p1[2].nome << "\nCPF: " << p1[2].cpf << "\nIdade: " << p1[2].idade << endl;
+    cout << "Nome: " << p1[0].nome << "\nCPF: " << p1[0].cpf << "\nIdade: " << p1[0].idade << endl;
+    cout << "Nome: " << p1[1].nome << "\nCPF: " << p1[1].cpf << "\nIdade: " << p1[1].idade << endl;
+    cout << "Nome: " << p1[2].nome << "\nCPF: " << p1[2].cpf << "\nIdade: " << p1[2].idade << endl;
 
-	return 0;
+    return 0;
 }

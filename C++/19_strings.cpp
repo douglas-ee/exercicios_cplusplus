@@ -6,7 +6,8 @@
 using namespace std;
 
 //Funcao principal do programa
-int main(){
+int main()
+{
 
     //Definindo uma String
     string palavra;
@@ -24,5 +25,4 @@ int main(){
     system("pause");
 
     return 0;
-
 }
