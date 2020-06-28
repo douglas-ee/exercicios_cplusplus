@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void main(){
+void main()
+{
 
     //Definindo uma variavel
     int a = 5, b;
@@ -32,5 +33,4 @@ void main(){
 
     //Pausando
     system("pause");
-
 }

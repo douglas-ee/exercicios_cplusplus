@@ -3,7 +3,8 @@
 #define TAM 10
 
 //Funcao principal do programa
-void main(){
+void main()
+{
 
     //Imprime na tela
     printf("%d", TAM);
@@ -11,11 +12,11 @@ void main(){
     int i;
 
     //Contagem ate 10
-    for(i = 1;i <= TAM;i++){
+    for (i = 1; i <= TAM; i++)
+    {
         printf("\n%d", i);
     }
 
     //Pausa o programa apos executar
     system("pause");
-
 }

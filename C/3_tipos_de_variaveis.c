@@ -2,7 +2,8 @@
 #include <stdlib.h>
 #include <stdbool.h>
 
-void main(){
+void main()
+{
 
     //Definindo Variaveis
     int a;
@@ -36,5 +37,4 @@ void main(){
 
     //Pausando
     system("pause");
-
 }
