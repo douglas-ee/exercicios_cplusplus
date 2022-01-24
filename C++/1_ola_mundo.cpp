@@ -8,6 +8,6 @@ using namespace std;
 
 int main()
 {
-    cout << "Ola mundo!" << endl;
+    cout << "Hello World!" << endl;
     return 0;
 }
